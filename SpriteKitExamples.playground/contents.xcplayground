@@ -6,5 +6,6 @@
         <page name='BasicSceneWithAction'/>
         <page name='AddingActions'/>
         <page name='CustomActions'/>
+        <page name='Physics1'/>
     </pages>
 </playground>

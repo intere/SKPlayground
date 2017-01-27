@@ -22,7 +22,7 @@ redBox.position = CGPoint(x: 512, y: 384)
 scene.addChild(redBox)
 
 // Now Animate the box, it's 1 line of code!!!
-redBox.run(SKAction.repeatForever(SKAction.rotate(byAngle: 6, duration: 2)))
+redBox.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(15/M_PI), duration: 2)))
 
 
 //: [Next](@next)
