@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='BasicScene'/>
+        <page name='NestedNode'/>
+        <page name='BasicSceneWithAction'/>
+        <page name='AddingActions'/>
+        <page name='CustomActions'/>
+    </pages>
+</playground>
