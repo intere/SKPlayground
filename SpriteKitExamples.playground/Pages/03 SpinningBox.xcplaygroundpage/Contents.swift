@@ -1,24 +1,43 @@
 //: [Previous](@previous)
 
+/*:
+ # 03 Simple Action
+ We will build on the Red box example and add an Action
+ */
+
 import SpriteKit
 import PlaygroundSupport
 
-// Create the SpriteKit View
+/*:
+ ---
+ ### Create the SpriteKit View
+ */
 let view = SKView(frame: CGRect(x: 0, y: 0, width: 1024, height: 768))
 
-// Add it to the TimeLine
+/*:
+ ### Add it to the TimeLine
+ */
 PlaygroundPage.current.liveView = view
 
 
-// Create the scene and add it to the view
+/*:
+ ### Create the scene and add it to the view
+ */
 let scene = SKScene(size: CGSize(width: 1024, height: 768))
 scene.scaleMode = .aspectFit
 view.presentScene(scene)
 
-
-// Add something to it!
+/*:
+ ### Create the Red Box, and add it to the scene
+ */
 let redBox = SKSpriteNode(color: .red, size:CGSize(width: 300, height: 300))
 redBox.position = CGPoint(x: 512, y: 384)
 scene.addChild(redBox)
+
+/*:
+ ### Now Animate the box, it's 1 line of code!!!
+ */
+redBox.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(15/M_PI), duration: 2)))
+
 
 //: [Next](@next)

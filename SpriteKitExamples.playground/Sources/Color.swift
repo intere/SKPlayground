@@ -1,8 +1,8 @@
-import UIKit
+import Cocoa
 
-public extension UIColor {
+public extension NSColor {
 
-    static let randomColors: [UIColor] =
+    static let randomColors: [NSColor] =
         [
             .white,
             .gray,
@@ -16,7 +16,7 @@ public extension UIColor {
             .brown
         ]
 
-    public static var random: UIColor {
+    public static var random: NSColor {
         let index = Int.random(max: randomColors.count)
         return randomColors[index]
     }

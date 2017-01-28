@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
+<playground version='6.0' target-platform='macos' display-mode='rendered'>
     <pages>
-        <page name='BasicScene'/>
-        <page name='NestedNode'/>
-        <page name='BasicSceneWithAction'/>
-        <page name='AddingActions'/>
-        <page name='CustomActions'/>
-        <page name='Physics1'/>
+        <page name='01 RedBox'/>
+        <page name='02 NestedNode'/>
+        <page name='03 SpinningBox'/>
+        <page name='04 Spinning Rotor'/>
+        <page name='05 Helicopter Actions'/>
+        <page name='06 Dropping Balls'/>
     </pages>
 </playground>
