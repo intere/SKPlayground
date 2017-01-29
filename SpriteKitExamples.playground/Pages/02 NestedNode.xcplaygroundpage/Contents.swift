@@ -31,14 +31,14 @@ view.presentScene(scene)
 PlaygroundPage.current.liveView = view
 
 /*:
- ### Create the Root Node
+ ### Create the "Sky" Node
  The node is structured this way:
 
  ![Node Tree](Nodes.png "Node Structure")
  */
-let rootNode = SKSpriteNode(color: .white, size: CGSize(width: 200, height: 200))
-rootNode.position = CGPoint(x: scene.frame.midX, y: scene.frame.midY)
-rootNode.setScale(3.0)
+let skyNode = SKSpriteNode(color: .white, size: CGSize(width: 200, height: 200))
+skyNode.position = CGPoint(x: scene.frame.midX, y: scene.frame.midY)
+skyNode.setScale(3.0)
 
 /*:
  ### Create the Missile node
@@ -72,13 +72,13 @@ rotor2Node.position = CGPoint(x: -5, y: -70)
 rotor2Node.zPosition = 10
 
 /*:
- ### Add the nodes to the root node
+ ### Add the nodes to the sky node
  The zPosition is what controls at what "layer" they are rendered.
  */
-rootNode.addChild(rotor1Node)
-rootNode.addChild(rotor2Node)
-rootNode.addChild(missilesNode)
-rootNode.addChild(bodyNode)
-scene.addChild(rootNode)
+skyNode.addChild(rotor1Node)
+skyNode.addChild(rotor2Node)
+skyNode.addChild(missilesNode)
+skyNode.addChild(bodyNode)
+scene.addChild(skyNode)
 
 //: [Next](@next)

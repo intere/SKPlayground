@@ -2,7 +2,7 @@
 /*:
  # 01 Simple SpriteKit Playground
  
- A *simple* demonstration that creates a red box using SpriteKit.
+ A simple demonstration that creates a `red box` using SpriteKit.
 
  */
 
