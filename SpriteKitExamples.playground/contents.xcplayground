@@ -7,5 +7,6 @@
         <page name='04 Spinning Rotor'/>
         <page name='05 Helicopter Actions'/>
         <page name='06 Dropping Balls'/>
+        <page name='07 Collisions'/>
     </pages>
 </playground>

@@ -4,7 +4,7 @@
  # 04 Animate the Helicopter
  We will animate rotor in the helicopter using an SKAction.  To reduce the amount of code, I've created a custom Helicopter class that extends SKSpriteNode.
  
- ## The interface looks like this:
+ ## The Helicopter interface looks like this:
  ```swift
  public class Helicopter : SKSpriteNode {
     /// Expose the main Rotor as a Node

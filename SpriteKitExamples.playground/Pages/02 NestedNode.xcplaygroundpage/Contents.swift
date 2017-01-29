@@ -10,17 +10,6 @@ import PlaygroundSupport
 
 /*:
  ---
- ### Extend SKTexture to create the textures
- */
-extension SKTexture {
-    static let body = SKTexture(image: #imageLiteral(resourceName: "Body.png"))
-    static let missiles = SKTexture(image: #imageLiteral(resourceName: "Missiles.png"))
-    static let rotor1 = SKTexture(image: #imageLiteral(resourceName: "Rotor1.png"))
-    static let rotor2 = SKTexture(image: #imageLiteral(resourceName: "Rotor2.png"))
-}
-
-/*:
- ---
  ### Create The view and scene
  Then set the PlaygroundPage's liveView to be the SKView.
  */
@@ -29,6 +18,17 @@ let scene = SKScene(size: CGSize(width: 1024, height: 768))
 scene.scaleMode = .aspectFit
 view.presentScene(scene)
 PlaygroundPage.current.liveView = view
+
+/*:
+ ---
+ ### Extend SKTexture to create the textures
+ */
+extension SKTexture {
+    static let body = SKTexture(image: #imageLiteral(resourceName: "Body.png"))
+    static let missiles = SKTexture(image: #imageLiteral(resourceName: "Missiles.png"))
+    static let rotor1 = SKTexture(image: #imageLiteral(resourceName: "Rotor1.png"))
+    static let rotor2 = SKTexture(image: #imageLiteral(resourceName: "Rotor2.png"))
+}
 
 /*:
  ### Create the "Sky" Node
