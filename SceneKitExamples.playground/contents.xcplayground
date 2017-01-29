@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos'>
+<playground version='6.0' target-platform='macos' display-mode='rendered'>
     <pages>
-        <page name='SceneKitExample1'/>
-        <page name='Untitled Page 2'/>
+        <page name='01 SceneKit Shapes'/>
+        <page name='02 Imported Model'/>
     </pages>
 </playground>
