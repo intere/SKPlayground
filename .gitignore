@@ -1,3 +1,6 @@
 
+xcuserdata
+*.xctimeline
+*.xcworkspace
 .DS_Store
 
