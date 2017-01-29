@@ -8,9 +8,13 @@ public enum ShapeType: Int {
     case pyramid
     case torus
     case capsule
-    case cylider
+    case cylinder
     case cone
     case tube
+
+    public static var values: [ShapeType] {
+        return [ .box, .sphere, .pyramid, .torus, .capsule, .cylinder, .cone, .tube ]
+    }
 
     public static var random: ShapeType {
         let maxValue = tube.rawValue
@@ -29,7 +33,7 @@ public enum ShapeType: Int {
             geometry = SCNCapsule(capRadius: 0.5, height: 2)
         case .cone:
             geometry = SCNCone(topRadius: 0, bottomRadius: 1, height: 1)
-        case .cylider:
+        case .cylinder:
             geometry = SCNCylinder(radius: 0.25, height: 1)
         case .pyramid:
             geometry = SCNPyramid(width: 1, height: 1, length: 1)

@@ -26,12 +26,15 @@ view.scene = scene
 
 /*:
  ---
- ### Add a random shape of random color
+ ### Add the shapes of random colors
  */
-let shape = ShapeType.random
-let node = SCNNode(geometry: shape.geometry)
-node.geometry?.materials.first?.diffuse.contents = NSColor.random
-
-scene.rootNode.addChildNode(node)
+var index: CGFloat = 0
+for type in ShapeType.values {
+    let node = SCNNode(geometry: type.geometry)
+    node.position = SCNVector3(index * 1, 0, 0)
+    node.geometry?.materials.first?.diffuse.contents = NSColor.random
+    index += 2
+    scene.rootNode.addChildNode(node)
+}
 
 //: [Next](@next)
