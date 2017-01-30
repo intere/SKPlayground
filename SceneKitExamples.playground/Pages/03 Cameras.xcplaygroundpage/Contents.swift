@@ -20,9 +20,12 @@ PlaygroundPage.current.liveView = view
 /*:
  ---
  ### Import the model (Scene)
+ I did not create this, credit goes to **Druid_CZ** at http://www.blendswap.com/blends/view/75948
  */
-let scene = SCNScene(named: "tardis.dae")
+let scene = SCNScene(named: "mountain.dae")
 view.scene = scene
+//scene?.rootNode.geometry?.firstMaterial?.diffuse.contents = NSColor.black
+scene?.background.contents = NSColor.blue
 
 /*:
  ---
@@ -50,14 +53,17 @@ scene?.rootNode.addChildNode(spot2)
  ---
  ### Get a reference to the Tardis Node
  */
-let tardis = scene?.rootNode.childNode(withName: "Tardis", recursively: false)
+let camera = scene?.rootNode.childNode(withName: "Camera", recursively: false)
 
 /*:
  ---
  ### Create a rotate action and run it on the Tardis
  */
-let rotate = SCNAction.rotateBy(x: 0, y: 0, z: CGFloat(45 / M_PI), duration: 3)
-tardis?.runAction(rotate)
+camera?.runAction(SCNAction.sequence([
+    SCNAction.move(by: SCNVector3(x: -5, y: 0, z: 0), duration: 3),
+    SCNAction.move(by: SCNVector3(x: 0, y: 0, z: 5), duration: 3),
+//    SCNAction.rotate()
+]))
 
 
 //: [Next](@next)
