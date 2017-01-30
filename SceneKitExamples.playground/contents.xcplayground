@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='raw'>
+<playground version='6.0' target-platform='macos' display-mode='rendered'>
     <pages>
         <page name='01 SceneKit Shapes'/>
         <page name='02 Imported Model'/>
         <page name='03 Cameras'/>
+        <page name='04 Orthographic Camera'/>
     </pages>
 </playground>

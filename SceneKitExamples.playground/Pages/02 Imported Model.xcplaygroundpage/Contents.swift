@@ -56,7 +56,7 @@ let tardis = scene?.rootNode.childNode(withName: "Tardis", recursively: false)
  ---
  ### Create a rotate action and run it on the Tardis
  */
-let rotate = SCNAction.rotateBy(x: 0, y: 0, z: CGFloat(45 / M_PI), duration: 3)
+let rotate = SCNAction.rotateBy(x: 0, y: 0, z: CGFloat(90 * M_PI / 180), duration: 3)
 tardis?.runAction(rotate)
 
 
